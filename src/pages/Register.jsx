@@ -1,5 +1,5 @@
 import { getAuth,createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider} from "firebase/auth";
-import { app } from "../credentials";
+import { app } from "./credentials";
 import{useState} from "react";
 import { useNavigate} from "react-router";
 import { Link } from "react-router";
