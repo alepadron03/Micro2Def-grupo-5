@@ -17,6 +17,10 @@ export default function Login(){
 
     const handLeLogin=async(e)=>{
         e.preventDefault()
+        if (!email || !password) {
+            setError('Por favor complete los datos!');
+            return; 
+        }
         if(error.message=='Firebase:  Error (auth/invalid-email).'){
             setError('T credenciales  inválidas');
             
@@ -60,24 +64,36 @@ export default function Login(){
 
     return(
         <div className='w-screen h-screen flex justify-center items-center'> 
+         <div className='absolute inset-0 bg-cover
+                        background-size: cover;' style={{
+                backgroundImage: 'url(/imagenes/s.jpg)',
+                
+                backgroundRepeat: 'no-repeat',
+                
+    
+                zIndex: -1
+                }}>
+                
+            </div>
             {loading && <div className=''>Guardando datos...</div>}
-            {error && <div className='text-red-600'>{error}</div>}
-            <form onSubmit={handLeLogin} className='flex flex-col bg-amber-50-amber-100 w-lg h-1/2 justify-center items-center gap-5 
+        
+            <form onSubmit={handLeLogin} className='flex flex-col bg-amber-50 w-lg max-h-1/2 justify-center items-center gap-5 
             rounded-2xl shadow-2xl  ' >
-                <h1 className='mb-10 text-4xl font-semibold'>Login</h1>
-                <Link  className='text-2xl text-orange-400' to='/register' >No tienes cuenta? Registrate! </Link>
-                <label className='text-xl'>
+                <h1 className='mb-10 text-4xl font-extrabold text-amber-50'>Login</h1>
+                <Link  className='text-2xl  text-blue-700' to='/register' >No tienes cuenta? Registrate! </Link>
+                <label className='text-xl font-extrabold'>
                     Email: 
-                    <input  value={email} onChange={(e)=> setEmail(e.target.value)}  className='border-1 ml-1 rounded-2xl' type="email" name=" email"  />
-                    
+                    <input  value={email} onChange={(e)=> setEmail(e.target.value)}  className='border-1 ml-1 rounded-2xl font-extralight' type="email" name=" email"  />
+                    {error && <div className='text-red-600 font-extralight'>{error}</div>}
                     
                 </label>
-                <label className='text-xl' >
-                    Password: 
-                    <input value={password} onChange={(e)=> setPassword(e.target.value)} className='border-1 ml-1 rounded-2xl' type="password" name="password "  />
+                <label className='text-xl font-extrabold' >
+                    Contraseña: 
+                    <input value={password} onChange={(e)=> setPassword(e.target.value)} className='border-1 ml-1 rounded-2xl font-extralight' type="password" name="password "  />
+                    {error && <div className='text-red-600 font-extralight text-2xl'>{error}</div>}
                 </label>
-                <button className='bg-orange-300 py-3 px-4 text-4xl rounded-2xl cursor-pointer font-extrabold' type="submit">Login</button>
-                <button type="button" onClick={handleGoogleSignIn} className='bg-orange-300 py-3 px-4 text-3xl rounded-2xl cursor-pointer mt-4'>
+                <button className='bg-blue-800 py-3 px-4 text-4xl rounded-2xl cursor-pointer font-extrabold text-amber-50' type="submit">Login</button>
+                <button type="button" onClick={handleGoogleSignIn} className='bg-blue-800 py-3 px-4 text-3xl rounded-2xl cursor-pointer mt-4 '>
                     
                     <img src="imagenes/google.svg" alt="Google" className='social-icon'/>
                 </button>
