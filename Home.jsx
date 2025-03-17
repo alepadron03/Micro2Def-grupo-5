@@ -30,7 +30,7 @@ export default function Home(){
                     <img className="h-75 w-75" src="imagenes/PicoIndio.png"></img>
                     <div className="absolute inset-0 bg-black opacity-0 rounded-md hover:opacity-75 duration-300 ">
                         <div className="absolute inset-0 ">
-                            <p className="text-white text-2xl font-bold m-6">Piedra del Indio via Quebrada Quintero</p>
+                            <Link to="/PiedraIndio" className="text-white text-2xl font-bold m-6">Piedra del Indio via Quebrada Quintero</Link>
                             <p className="text-white text-2xl font-bold m-6">Tiene una dificultad alta para las personas con mas experiencias</p>
                             <p className="text-white text-2xl font-bold m-6">DIFICULTAD: DIFICIL</p>
                         </div>
@@ -41,7 +41,7 @@ export default function Home(){
                     <img className="h-75 w-75" src="imagenes/PicoNaiguata.jpg"></img>
                     <div className="absolute inset-0 bg-black opacity-0 rounded-md hover:opacity-75 duration-300 ">
                         <div className="absolute inset-0 ">
-                            <p className="text-white text-2xl font-bold m-6">Pico Naiguata</p>
+                            <Link to="/PicoNa" className="text-white text-2xl font-bold m-6">Pico Naiguata</Link>
                             <p className="text-white text-2xl font-bold m-6">Larga subida no para principiantes</p>
                             <p className="text-white text-2xl font-bold m-6">DIFICULTAD: DIFICIL</p>
                         </div>
@@ -52,7 +52,7 @@ export default function Home(){
                     <img className="h-75 w-75" src="imagenes/CruzDeLosPalmeros.jpg"></img>
                     <div className="absolute inset-0 bg-black opacity-0 rounded-md hover:opacity-75 duration-300 ">
                         <div className="absolute inset-0 ">
-                            <p className="text-white text-2xl font-bold m-6">Cruz de Los Palmeros</p>
+                            <Link to="/CruzP"  className="text-white text-2xl font-bold m-6">Cruz de Los Palmeros</Link>
                             <p className="text-white text-2xl font-bold m-6">Subida Larga no para Principiantes</p>
                             <p className="text-white text-2xl font-bold m-6">DIFICULTAD: DIFICIL</p>
                         </div>
