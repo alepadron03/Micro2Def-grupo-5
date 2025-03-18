@@ -67,7 +67,7 @@ export default function Header() {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-           {/*} 
+           {/* 
            <nav className=''>
             
             <ul className="flex bg-amber-700 justify-around text-4xl text-nowrap text-white font-bold">
@@ -81,7 +81,7 @@ export default function Header() {
                     
             </ul>
         </nav>
-        {*/} 
+        */} 
         </div>
 
     )
