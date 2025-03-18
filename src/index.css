@@ -26,5 +26,55 @@
     color: #c3c3c3;
   }
 
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 1rem; /* Espacio entre las tarjetas */
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Suaviza el desplazamiento */
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+  }
+  
+  .carousel-arrow {
+    background-color: #6f42c1; /* Personaliza el color del botón */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: #5932a6; /* Color al pasar el ratón */
+  }
+
 @import "tailwindcss";
 @import 'bootstrap/dist/css/bootstrap.min.css';

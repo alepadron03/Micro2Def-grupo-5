@@ -3,7 +3,7 @@ import { useNavigate} from "react-router";
 import { Link } from 'react-router'
 import Header from '../components/NavBar';
 import Footer from '../components/Footer';
-
+import Rutas from '../components/Rutas';
 
 export default function Home(){
     
@@ -13,7 +13,7 @@ export default function Home(){
             <header className='text-center text-5xl font-medium py-10 bg-white'>Excursionemos como comunidad unimetana!</header>
 
             <header className ="text-center text-4xl font-normal py-10 bg-blue-200">Explora alguna de las opciones que nos llevan a nuestros destinos</header>
-
+            <Rutas/>
             <div className='flex align-middle bg-blue-200 gap-10 justify-center'>
                 <div class="relative max-w-fit mt-10 mb-10 rounded-b-lg">
                     <img className="h-75 w-75" src="imagenes/SabasNieves.png"></img>
