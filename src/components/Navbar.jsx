@@ -14,12 +14,15 @@ export default function Navbar(){
 
         <nav className=''>
             
-            <ul className="flex bg-blue-800 justify-around text-4xl text-nowrap text-white font-bold">
+            <ul className="flex bg-amber-700 justify-around text-4xl text-nowrap text-white font-bold">
                 <img src="imagenes/Metrologo.png" className="w-33 h-33 hover:opacity-65" onClick={mandarLink}></img>
-                    <Link to='/home' class='hover:bg-blue-700 py-12 px-10'>INICIO</Link>
-                    <Link to='/sabasNieves' class='hover:bg-blue-700 py-12 px-10'>RUTAS</Link>
-                    <Link to='/login' className="flex gap-10 py-12 hover:bg-blue-700">INICIAR SESION</Link>
-                    <Link to='/Register'className="flex gap-10 py-12 hover:bg-blue-700">REGISTRAR</Link>
+                    <Link to='/home' class='hover:bg-orange-400 py-12 px-8'>Inicio</Link>
+                    <Link to='/sabasNieves' class='hover:bg-orange-400 py-12 px-8'>Rutas</Link>
+                    <Link to='/Contacto'className="flex gap-20 py-12 hover:bg-orange-400">Contacto</Link>
+                    <Link to='/Foro'className="flex gap-5 py-12 hover:bg-orange-400">Foro</Link>
+                    <Link to='/login' className="flex gap-5 py-12 hover:bg-orange-400">Iniciar sesion</Link>
+                    <Link to='/Register'className="flex gap-5 py-12 hover:bg-orange-400">Registrarme</Link>
+                    
             </ul>
         </nav>
         
