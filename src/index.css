@@ -1,2 +1,30 @@
+.custom-navbar {
+    background-color: #c3c3c3; /* Asegúrate de tener este valor en tus variables CSS */
+    color: white;
+  }
+  
+  .custom-navbar .nav-link {
+    color: white !important;
+    font-weight: bold; /* Letras un poco más en negrita */
+  }
+  
+  .custom-navbar .nav-link:hover {
+    text-decoration: underline; /* Opcional: subrayar al pasar el ratón */
+  }
+  
+  .custom-navbar .navbar-brand img {
+    /* Opcional: personalizar estilos del logo */
+  }
+  
+  .custom-navbar .btn-outline-light {
+    color: white;
+    border-color: white;
+  }
+  
+  .custom-navbar .btn-outline-light:hover {
+    background-color: white;
+    color: #c3c3c3;
+  }
+
 @import "tailwindcss";
 @import 'bootstrap/dist/css/bootstrap.min.css';
