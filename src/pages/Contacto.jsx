@@ -6,7 +6,7 @@ export default function Contacto() {
   const estudiantes = [
     { nombre: 'Ada Arellano', correo: 'ada.arellano@correo,unimet.edu.ve' },
     { nombre: 'Adolfo Barberi', correo: 'adolfo.barberi@correo,unimet.edu.ve' },
-    { nombre: 'Karelin Guzman', correo: 'karelin.guzman@correo,unimet.edu.ve' },
+    { nombre: 'Karelin Guzman', correo: 'kguzman@correo,unimet.edu.ve' },
     { nombre: 'Cesar Minotti', correo: 'cesar.minotti@correo,unimet.edu.ve' },
     { nombre: 'Alexandra Padron', correo: 'alexandra.padron@correo,unimet.edu.ve' },
     { nombre: 'Ana Orozco', correo: 'ana.orozco@correo,unimet.edu.ve' },
