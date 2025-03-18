@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate} from "react-router";
 import { Link } from 'react-router'
-import Navbar from '../components/navBar';
+import Header from '../components/NavBar';
 import Footer from '../components/Footer';
 
 
@@ -9,7 +9,7 @@ export default function Home(){
     
     return(
         <>
-            <Navbar />
+            <Header />
             <header className='text-center text-5xl font-medium py-10 bg-white'>Excursionemos como comunidad unimetana!</header>
 
             <header className ="text-center text-4xl font-normal py-10 bg-blue-200">Explora alguna de las opciones que nos llevan a nuestros destinos</header>
