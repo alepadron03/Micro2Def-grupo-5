@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import Carousel from 'react-bootstrap/Carousel';
+
 export default function Rutas() {
     const scrollCarousel = (direction) => {
         const carousel = document.querySelector('.carousel');
@@ -13,9 +15,55 @@ export default function Rutas() {
         });
     };
     return (
-        <div className="carousel-container">
+        <Carousel>
+            <Carousel.Item>
+                <img src="imagenes/SabasNieves.png" text="Sabas Nieves" width="100%" height="100%" />
+                <Carousel.Caption>
+                    <h3>Sabas Nieves</h3>
+                    <p> <FontAwesomeIcon icon={faStar}/> 3.5 (reviews)</p>
+                    <p>Ruta perfecta para quienes esperan un buen desafío sin rozar en la dificultad extrema.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <img text="Pico el Indio" src="imagenes/PicoIndio.png" width="100%" height="100%"/>
+
+                <Carousel.Caption>
+                    <h3>Pico el Indio</h3>
+                    <p> <FontAwesomeIcon icon={faStar}/> 1.5 (reviews)</p>
+                    <p>Tiene una dificultad alta para las personas con mas experiencia..</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <img  text="Pico Naiguata" src="imagenes/PicoNaiguata.jpg" width="100%" height="100%"/>
+
+                <Carousel.Caption>
+                    <h3>Pico Naiguatá</h3>
+                    
+                    <p> <FontAwesomeIcon icon={faStar}/> 4.5 (reviews)</p>
+                    <p>
+                    Subida pronunciada. No apto para principiantes.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <img  text="Pico Naiguata" src="imagenes/CruzDeLosPalmeros.jpg" width="100%" height="100%"/>
+
+                <Carousel.Caption>
+                    <h3>Cruz de los Palmeros</h3>
+                    <p> <FontAwesomeIcon icon={faStar}/> 2.5 (reviews)</p>
+
+                    <p>
+                    Subida pronunciada. No apto para principiantes.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    )
+};
+/*
+<div className="carousel-container">
             <button className="carousel-arrow left" onClick={() => scrollCarousel(-1)}>
-                &#8249; {/* Flecha izquierda */}
+                &#8249; 
             </button>
 
             <div className="carousel">
@@ -124,8 +172,7 @@ export default function Rutas() {
                 </Card>
             </div>
             <button className="carousel-arrow right" onClick={() => scrollCarousel(1)}>
-                &#8250; {/* Flecha derecha */}
+                &#8250; {/* Flecha derecha 
             </button>
         </div>
-    )
-};
+*/

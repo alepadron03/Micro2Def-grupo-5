@@ -1,12 +1,12 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Navbar from '../components/navBar'
+import Footer from '../components/Footer';
+import Header from '../components/NavBar';
 
 export default function PicoNa (){
     return(
         <>
 
-            <Navbar/>
+            <Header/>
                 <div class='mt-10 ml-30 mr-30'>
                     <h1 class='text-7xl font-bold'>Pico Naiguata</h1>
                     <p class='text-2xl py-2'>Es el punto más alto de la Cordillera de la Costa en Venezuela, es un destino emblemático para los amantes del senderismo. Con una altitud de 2.765 metros, ofrece vistas espectaculares y una experiencia desafiante pero gratificante.</p>

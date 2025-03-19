@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import Navbar from '../components/navBar';
+import Header from '../components/NavBar';
+
 
 function Foro() {
   const [comentarios, setComentarios] = useState([]);
@@ -15,7 +16,7 @@ function Foro() {
 
   return (
     <>
-      <Navbar />
+      <Header />
       <div className="container mx-auto mt-10 p-4">
         <h1 className="text-3xl font-bold mb-4">Foro</h1>
         <p class='text-2xl py-2'>Este foro es para expresar las dudas que tengan sobre la ruta, su experiencia con las actividades y cualquier comentario que quieran dejarnos. Los leemos!</p>

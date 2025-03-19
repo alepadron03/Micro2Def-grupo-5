@@ -1,10 +1,41 @@
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+.perk-card {
+  border: 5px solid #c3c3c3;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.position-relative {
+  position: relative;
+  /* Ya no necesitamos margin-bottom aquí */
+}
+
+.perks-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  height: 150px; /* Ajusta este valor según la cantidad de superposición deseada */
+  overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.rutas-container {
+  position: relative;
+  z-index: 0;
+  margin-top: 150px; /* Debe ser igual a la altura de perks-container */
+}
 .custom-navbar {
-    background-color: #c3c3c3; /* Asegúrate de tener este valor en tus variables CSS */
-    color: white;
+    background-color: white; /* Asegúrate de tener este valor en tus variables CSS */
+    color: #d90057;
   }
   
   .custom-navbar .nav-link {
-    color: white !important;
+    color: #d90057 !important;
     font-weight: bold; /* Letras un poco más en negrita */
   }
   
@@ -17,13 +48,13 @@
   }
   
   .custom-navbar .btn-outline-light {
-    color: white;
-    border-color: white;
+    color: #d90057;
+    border-color: #d90057;
   }
   
   .custom-navbar .btn-outline-light:hover {
-    background-color: white;
-    color: #c3c3c3;
+    background-color: #d90057;
+    color: white;
   }
 
   .carousel-container {
@@ -48,7 +79,7 @@
   }
   
   .carousel-arrow {
-    background-color: #6f42c1; /* Personaliza el color del botón */
+    background-color: #77b8a6; /* Personaliza el color del botón */
     color: white;
     border: none;
     border-radius: 50%;
