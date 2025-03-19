@@ -1,12 +1,13 @@
 import React from 'react'
 import Footer from '../components/Footer'
-import Navbar from '../components/navBar'
+import Header from '../components/NavBar';
+
 
 export default function CruzP (){
     return(
         <>
 
-            <Navbar/>
+            <Header/>
                 <div class='mt-10 ml-30 mr-30'>
                     <h1 class='text-7xl font-bold'>Cruz de los Palmeros</h1>
                     <p class='text-2xl py-2'>La ruta hacia la Cruz de los Palmeros, ubicada en el Parque Nacional El Ávila, es una experiencia desafiante pero enriquecedora para los senderistas. Una de las rutas más comunes comienza en Sabas Nieves, un punto de acceso popular en Caracas. Desde allí, el sendero asciende hacia el Pico Oriental, pasando por áreas boscosas y miradores con vistas espectaculares de la ciudad.</p>

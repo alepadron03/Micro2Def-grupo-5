@@ -23,7 +23,7 @@ export default function Footer() {
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link eventKey="disabled" disabled>
-                        Disabled
+                        Agentes
                     </Nav.Link>
                 </Nav.Item>
             </Nav>
@@ -35,6 +35,7 @@ export default function Footer() {
                     alt="img"
                 />
             </Navbar.Brand>
+            {/* 
             <nav className='mt-30'>
 
                 <ul className="flex bg-amber-800 justify-around text-4xl text-nowrap text-white font-bold ">
@@ -43,6 +44,7 @@ export default function Footer() {
 
                 </ul>
             </nav>
+            */}
         </div>
     )
 }

@@ -1,12 +1,13 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Navbar from '../components/navBar'
+import Footer from '../components/Footer';
+import Header from '../components/NavBar';
+
 
 export default function PiedraIndio (){
     return(
         <>
 
-            <Navbar/>
+            <Header/>
                 <div class='mt-10 ml-30 mr-30'>
                     <h1 class='text-7xl font-bold'>Piedra el Indio</h1>
                     <p class='text-2xl py-2'>La ruta hacia la Piedra El Indio, ubicada en el Parque Nacional El Ávila, es una experiencia única para los amantes del senderismo en Caracas. Este destino ofrece vistas espectaculares y un ambiente tranquilo para disfrutar de la naturaleza.</p>
