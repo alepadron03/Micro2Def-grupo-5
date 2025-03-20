@@ -4,7 +4,8 @@ import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvide
 import{app} from './credentials'
 import { useNavigate} from "react-router";
 import { Link } from 'react-router'
-import Navbar from '../components/navBar';
+import Header from '../components/NavBar';
+
 
 const auth=getAuth(app)
 const googleProvider = new GoogleAuthProvider();

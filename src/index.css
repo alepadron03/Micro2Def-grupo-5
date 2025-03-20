@@ -3,6 +3,28 @@
   top: 0;
   z-index: 100; /* Asegura que esté por encima de otros elementos */
 }
+.custom-button {
+  background-color: white;
+  border-color: #d90057;
+  color: #d90057;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+  padding: 10px 20px; /* Agrega padding para mejor apariencia */
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+  margin-top: 10px; /* Agrega espacio entre los botones */
+  display: flex; /* Para centrar el icono de Google */
+  align-items: center; /* Para centrar el icono de Google */
+  justify-content: center; /* Para centrar el icono de Google */
+}
+
+.custom-button:hover {
+  background-color: #c0004a;
+  color: white;
+}
+
+.social-icon {
+  margin-right: 5px; /* Agrega espacio entre el icono de Google y el texto */
+}
 .perk-card {
   border: 5px solid #c3c3c3;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
