@@ -9,6 +9,7 @@ import PiedraIndio from './pages/PiedraIndio'
 import PicoNa from './pages/PicoNa'
 import CruzP from './pages/CruzP'
 import Foro from './pages/Foro'
+import Guias from './pages/Guias.jsx'
 
 export default function App(){
   return(
@@ -19,6 +20,7 @@ export default function App(){
       <Route path='login' element={<Login />} />
       <Route path='Contacto' element={<Contacto />} />
       <Route path='Foro' element={<Foro />} />
+      <Route path='Guias' element={<Guias/>} />
       <Route path='register' element={<Register />} />
       <Route path='SabasNieves' element={<NotFound />} />
       <Route path='PiedraIndio' element={<PiedraIndio />} />
