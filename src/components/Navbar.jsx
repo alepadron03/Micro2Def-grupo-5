@@ -41,7 +41,7 @@ export default function Header() {
             >
               <Nav.Link href="/home">Inicio</Nav.Link>
               <Nav.Link href="/sabasNieves">Rutas</Nav.Link>
-              <Nav.Link href="/home">Guías</Nav.Link>
+              <Nav.Link href="/Guias">Guias</Nav.Link>
               <Nav.Link href="/Foro">Reviews</Nav.Link>
               <Nav.Link href="/Contacto">Contacto</Nav.Link>
 
